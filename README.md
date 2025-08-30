@@ -1,60 +1,67 @@
-# Kindness-basketball-2v2.
-# Basketball 2v2 (Pygame)
+🏀 Kindness Basketball 2v2 (Pygame)
 
-A simple 2v2 basketball mini-game built with **Pygame**.  
-You control a player, work with your AI teammate, and try to score while also building up a "Kindness" score by passing.  
+A simple 2v2 basketball mini-game built with Pygame.
+You control a player, work with your AI teammate, and try to score — while also building a Kindness score through passing and teamwork.
 
-Win the game by reaching a combined **Score + Kindness = 20**.
+💡 Win the game by reaching a combined Score + Kindness = 20.
 
----
+| Key / Button                        | Action                                                |
+| ----------------------------------- | ----------------------------------------------------- |
+| **W / A / S / D** or **Arrow Keys** | Move player                                           |
+| **SPACE**                           | Shoot (when possession freezes)                       |
+| **E**                               | Pass to teammate (when possession freezes)            |
+| **Q**                               | Call for the ball (ask teammate to pass)              |
+| **F**                               | Attempt a steal from opponents                        |
+| **P**                               | Pause / Resume game                                   |
+| **R**                               | Reset game (hard reset)                               |
+| **ESC**                             | Quit game                                             |
+| **Mouse (left click)**              | Use UI buttons (Pause, Reset, Speed +/–, Shoot, Pass) |
 
-## 🎮 Controls
+🏆 Win Condition
 
-| Key / Button | Action |
-|--------------|--------|
-| **W / A / S / D** or **Arrow Keys** | Move player |
-| **SPACE** | Shoot (only when possession freezes) |
-| **E** | Pass to teammate (only when possession freezes) |
-| **Q** | Call for the ball (ask teammate to pass) |
-| **F** | Attempt a steal from opponents |
-| **P** | Pause / Resume game |
-| **R** | Reset game (hard reset) |
-| **ESC** | Quit game |
-| **Mouse (left click)** | Click UI buttons (Pause, Reset, Speed +/–, Shoot, Pass) |
+Victory is achieved when Score + Kindness = 20.
 
----
+A full-screen overlay appears with YOU WIN!
 
-## 🏆 Win Condition
+Press R to restart after winning.
 
-- Your team wins when **Score + Kindness reaches 20**.  
-- A victory screen appears with **YOU WIN!** and the game freezes.  
-- Press **R** to restart after winning.
+🤝 Kindness Score
 
----
+Passing to your teammate or your teammate stealing boosts your Kindness score.
 
-## 🤝 Kindness Score
+This rewards teamwork, not just solo scoring.
 
-- Passing to your teammate or your teammate stealing for you increases your **Kindness** score.  
-- This encourages teamwork, not just scoring alone.  
+⚙️ Features
 
----
+Decision Freeze: Whenever you get possession, the game pauses for you to choose Shoot or Pass.
 
-## ⚙️ Features
+Call for Ball: Press Q to ask your teammate to pass (they might ignore you if defenders are too close).
 
-- **Decision Freeze:** Whenever you gain possession, the game freezes and gives you options: **Shoot** or **Pass**.  
-- **Call for Ball:** Press **Q** to ask your teammate to pass (they may ignore you if defenders are too close).  
-- **AI Logic:** Teammate will move towards the hoop, sometimes shoot. Defenders chase and try to steal.  
-- **Speed Controls:** UI buttons (or +/– keys) let you adjust player/AI speeds.  
-- **Winning Screen:** Full-screen overlay when target is reached.  
+AI Teammate & Defenders: Teammate runs plays, shoots sometimes; defenders chase, guard, and steal.
 
----
+Speed Controls: Adjust speeds using UI buttons or the + / – keys.
 
-## 🛠 Requirements
+Winning Screen: Big overlay when you reach the target.
 
-- Python 3.x  
-- [Pygame](https://www.pygame.org/)  
+🛠 Requirements
 
-Install dependencies:
+Python 3.8+
 
-```bash
+Pygame
+ (2.6+ recommended)
+
+Install with:
+
 pip install pygame
+
+▶️ How to Run
+Option 1 — Command Prompt / Terminal
+python main.py
+
+Option 2 — VS Code
+
+Open the folder in VS Code.
+
+Open main.py.
+
+Press ▶ Run (top-right).
